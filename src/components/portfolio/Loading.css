@@ -1,0 +1,27 @@
+.loading {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.loading__spinner {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #2188ff;
+  animation: spin 1s linear infinite;
+}
+
+.loading__text {
+  margin: 0;
+  opacity: 0.85;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

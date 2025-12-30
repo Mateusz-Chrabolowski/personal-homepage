@@ -1,0 +1,28 @@
+.error {
+  text-align: center;
+  padding: 40px 0 16px;
+}
+
+.error__title {
+  margin: 0 0 8px;
+  font-weight: 800;
+}
+
+.error__desc {
+  margin: 0 0 20px;
+  opacity: 0.85;
+}
+
+.error__button {
+  display: inline-flex;
+  padding: 12px 20px;
+  background: #2188ff;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.error__button:hover {
+  filter: brightness(1.05);
+}

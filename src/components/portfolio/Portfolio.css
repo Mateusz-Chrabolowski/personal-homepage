@@ -1,0 +1,30 @@
+.portfolio {
+  margin-bottom: 72px;
+}
+
+.portfolio__heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio__title {
+  margin: 0;
+  font-size: 32px;
+}
+
+.portfolio__subtitle {
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+}

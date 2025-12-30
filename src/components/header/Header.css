@@ -1,0 +1,11 @@
+.header {
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

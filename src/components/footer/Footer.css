@@ -1,0 +1,7 @@
+.footer {
+  padding: 64px 0;
+}
+
+.footer__email {
+  font-weight: bold;
+}
