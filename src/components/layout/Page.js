@@ -1,5 +1,5 @@
 function Page({ children }) {
-  return <>{children}</>;
+  return <main>{children}</main>;
 }
 
 export default Page;

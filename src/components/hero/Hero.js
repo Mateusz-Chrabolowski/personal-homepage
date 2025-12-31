@@ -1,26 +1,25 @@
+import "./Hero.css";
 import Container from "../layout/Container";
 import HireMeButton from "../ui/HireMeButton";
-import "./Hero.css";
 
-function Hero() {
+export default function Hero() {
   return (
     <section className="hero">
       <Container>
-        <div className="hero__content">
+        <div className="hero__grid">
           <img
-            src="/avatar.jpg"
-            alt="Krzysiek Dąbrowski"
             className="hero__avatar"
+            src="/avatar.jpg"
+            alt="Mateusz Chrabłowski"
           />
 
-          <div className="hero__text">
-            <p className="hero__label">THIS IS</p>
+          <div className="hero__content">
+            <span className="hero__label">THIS IS</span>
+            <h1 className="hero__name">Mateusz Chrabołowski</h1>
 
-            <h1 className="hero__name">Krzysiek Dąbrowski</h1>
-
-            <p className="hero__desc">
-              I’m a passionate Frontend Developer in love with React,
-              currently looking for new job opportunities.
+            <p className="hero__description">
+              I'm a passionate Frontend Developer student in love with creating sites and apps, currently
+              looking for new job opportunities.
             </p>
 
             <HireMeButton />
@@ -30,5 +29,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;

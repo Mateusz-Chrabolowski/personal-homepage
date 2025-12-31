@@ -1,31 +1,21 @@
-import "./ProjectCard.css";
-
-function ProjectCard({ project }) {
+function ProjectCard({ title, description, tech, demo, code }) {
   return (
-    <article className="projectCard">
-      <h3 className="projectCard__title">{project.name}</h3>
+    <div className="project-card">
+      <h3>{title}</h3>
 
-      <p className="projectCard__desc">{project.description}</p>
+      <p className="project-card__desc">{description}</p>
 
-      <span className="projectCard__tag">{project.technology}</span>
+      <span className="project-card__tech">{tech}</span>
 
-      <div className="projectCard__links">
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noreferrer"
-        >
+      <div className="project-card__links">
+        <a href={demo} target="_blank" rel="noreferrer">
           Demo
         </a>
-        <a
-          href={project.code}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={code} target="_blank" rel="noreferrer">
           Code
         </a>
       </div>
-    </article>
+    </div>
   );
 }
 

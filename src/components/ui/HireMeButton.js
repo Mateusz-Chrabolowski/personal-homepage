@@ -2,7 +2,7 @@ import "./HireMeButton.css";
 
 function HireMeButton() {
   return (
-    <a href="mailto:krzysiek@youcode.pl" className="hireMe">
+    <a href="mailto:mateusz.chrabolowski@gmail.com" className="hireMe">
       ✉ Hire Me
     </a>
   );
