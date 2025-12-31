@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import "./Portfolio.css";
 
 function Portfolio() {
-  const [state, setState] = useState("loading"); // loading | success | error
+  const [state, setState] = useState("loading");
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,6 @@ function Portfolio() {
         return res.json();
       })
       .then((data) => {
-        // bierzemy tylko te projekty które faktycznie chcesz pokazać
         const wanted = [
           "currency-converter",
           "currency-converter-react",
@@ -41,16 +40,12 @@ function Portfolio() {
           <h2>Portfolio</h2>
           <p>My recent projects</p>
         </div>
-
-        {/* LOADING */}
         {state === "loading" && (
           <div className="portfolio__loading">
             <p>Please wait, projects are being loaded...</p>
             <div className="spinner" />
           </div>
         )}
-
-        {/* ERROR */}
         {state === "error" && (
   <div className="portfolio__error">
     <div className="portfolio__errorIcon">⚠️</div>
@@ -74,8 +69,6 @@ function Portfolio() {
   </div>
 )}
 
-
-        {/* SUCCESS */}
         {state === "success" && (
           <div className="portfolio__grid">
             {projects.map((project) => (

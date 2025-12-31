@@ -1,6 +1,7 @@
 import "./Hero.css";
 import Container from "../layout/Container";
 import HireMeButton from "../ui/HireMeButton";
+import avatar from "../../assets/avatar.jpg";
 
 export default function Hero() {
   return (
@@ -9,8 +10,8 @@ export default function Hero() {
         <div className="hero__grid">
           <img
             className="hero__avatar"
-            src="/avatar.jpg"
-            alt="Mateusz Chrabłowski"
+            src={avatar}
+            alt="Mateusz Chrabołowski"
           />
 
           <div className="hero__content">
@@ -18,8 +19,8 @@ export default function Hero() {
             <h1 className="hero__name">Mateusz Chrabołowski</h1>
 
             <p className="hero__description">
-              I'm a passionate Frontend Developer student in love with creating sites and apps, currently
-              looking for new job opportunities.
+              I'm a passionate Frontend Developer student in love with creating sites and apps,
+              currently looking for new job opportunities.
             </p>
 
             <HireMeButton />
